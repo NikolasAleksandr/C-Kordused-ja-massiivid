@@ -11,7 +11,7 @@ class Program
         int N = rand.Next(-100, 101);
         int M = rand.Next(-100, 101);
         long[] numbers = new long[M - (long)N + 1]; // Используем тип long, потому что разброс большой 200 и все не дает запустить
-        for (int i = 0; i < numbers.Length; i++)
+        for (int i = 0; i < numbers.Length; i++) // перебирать каждое число в списке по порядку от начала до конца.
         {
             numbers[i] = rand.Next(N, M + 1);
             Console.WriteLine($"Arv {i + 1} ruut: {numbers[i] * numbers[i]}");
